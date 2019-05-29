@@ -1,4 +1,6 @@
-import React from 'react';
+import React, {Component} from 'react';
+
+import CityList from '../containers/city_list.jsx';
 
 const cities = [
   { name: 'Paris', address: '16 Villa Gaudelet, 75011 Paris', slug: 'paris' },
