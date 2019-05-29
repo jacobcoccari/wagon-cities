@@ -9,7 +9,7 @@ class CityList extends Component {
   }
 
   render() {
-    return (<div>
+    return (<div className="list-group-item">
       {this.renderlist()}
     </div>);
   }

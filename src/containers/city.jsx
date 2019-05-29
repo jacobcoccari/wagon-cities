@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 
 class City extends Component {
   render() {
-    return;
+    return(<div className="city-name" >
+      {this.props.name}</div>);
   }
 }
 
