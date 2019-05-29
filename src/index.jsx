@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 import { createStore, combineReducers } from 'redux';
 
 // internal modules
-import App from './components/app';
+import App from './components/app.jsx';
 import '../assets/stylesheets/application.scss';
 
 // State and reducers
@@ -19,4 +19,4 @@ ReactDOM.render(
     <App />
   </Provider>,
   document.getElementById('root')
-);
+  );

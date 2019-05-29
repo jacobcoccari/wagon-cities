@@ -4,7 +4,8 @@ import City from './city.jsx';
 
 class CityList extends Component {
   renderlist = () => {
-    return(props.cities.map((city) => <Flat name={city.name}/>));
+    console.log("CityList has rendered  and renderedlist")
+    return(this.props.cities.map((city) => <City name={city.name}/>));
   }
 
   render() {
