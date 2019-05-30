@@ -1,8 +1,8 @@
 // TODO: add and export your own actions
 
-import Cities from '../cities.js'
+import { cities } from '../cities.js'
 
-export function setFlats() {
+export function setCities() {
   return {
     type: 'SET_CITIES'
     payload: cities;
