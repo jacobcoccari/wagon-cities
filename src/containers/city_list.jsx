@@ -8,10 +8,14 @@ class CityList extends Component {
     return(this.props.cities.map((city) => <City name={city.name}/>));
   }
 
+  componentWillMount() {
+    //dispatch an action to fetch all of the cities
+  }
+
   render() {
-    return (<div className="list-group-item">
+    return (<ul className="list-group cities">
       {this.renderlist()}
-    </div>);
+    </ul>);
   }
 }
 
