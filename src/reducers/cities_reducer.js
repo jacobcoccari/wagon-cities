@@ -1,5 +1,4 @@
 export default function(state, action) {
-  console.log('citiesreducer');
   //compute and return the new state.
   switch(action.type) {
     case 'CITY_SELECTED':
