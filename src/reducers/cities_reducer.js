@@ -2,9 +2,9 @@ export default function(state, action) {
   console.log('cities_reducer has been called');
   //compute and return the new state.
   switch(action.type) {
-    case undefined:
-      state
-    case 'SET_CITIES':
+    case 'CITY_SELECTED':
+      return []
+    default:
       return  [{ name: 'Paris', address: '16 Villa Gaudelet, 75011 Paris', slug: 'paris' },
         { name: 'London', address: '14-22 Elder St, London E1 6BT', slug: 'london' },
         { name: 'Berlin', address: 'Rudi-Dutschke-Straße 26, 10969 Berlin', slug: 'berlin' },
@@ -30,7 +30,5 @@ export default function(state, action) {
         { name: 'Lille', address: '2 Avenue des Saules, 59000 Lille', slug: 'lille' },
         { name: 'Lyon', address: '23 Rue Paul Montrochet, 69002 Lyon', slug: 'lyon' },
       ];
-    default:
-      return state;
   }
 }

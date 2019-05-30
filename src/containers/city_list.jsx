@@ -12,10 +12,10 @@ class CityList extends Component {
     return(this.props.cities.map((city) => <City name={city.name}/>));
   }
 
-  componentWillMount() {
-    this.props.setCities();
-    //dispatch an action to fetch all of the cities
-  }
+  // componentWillMount() {
+  //   this.props.setCities();
+  //   //dispatch an action to fetch all of the cities
+  // }
 
   render() {
     return (<ul className="list-group cities">
@@ -24,17 +24,10 @@ class CityList extends Component {
   }
 }
 
-function mapDispatchToProps(dispatch) {
-  return bindActionCreators(
-    {setCities: setCities },
-    dispatch
-    );
-}
-
-function mapStateToProps(state) {
+function mapReduxStateToProps(state) {
   return {
     cities: state.cities
   };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(CityList);
+export default connect(mapReduxStateToProps)(CityList);
