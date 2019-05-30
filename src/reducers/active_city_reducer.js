@@ -1,6 +1,6 @@
 export default function(state = null, action) {
+  console.log('activecityreducer');
   switch (action.type) {
-    console.log('activecityreducer');
     case 'CITY_SELECTED': {
       return action.payload;
     }
