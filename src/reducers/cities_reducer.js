@@ -1,9 +1,9 @@
 export default function(state, action) {
-  console.log('cities_reducer has been called');
+  console.log('citiesreducer');
   //compute and return the new state.
   switch(action.type) {
     case 'CITY_SELECTED':
-      return []
+      return state
     default:
       return  [{ name: 'Paris', address: '16 Villa Gaudelet, 75011 Paris', slug: 'paris' },
         { name: 'London', address: '14-22 Elder St, London E1 6BT', slug: 'london' },
